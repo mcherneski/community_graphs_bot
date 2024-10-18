@@ -1,7 +1,7 @@
 module.exports = {
    apps: [
        {
-           name: "EthSafari_Bot",
+           name: "CommunityGraphs_Bot",
            script: "node index.js",
            env: {
                NODE_ENV: "production",

@@ -1,1 +1,0 @@
-export const update = "\nWelcome to the EthSafari Hackathon! More updates coming soon.\n"

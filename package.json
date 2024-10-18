@@ -17,8 +17,5 @@
     "telegraf": "^4.16.3",
     "typescript": "^5.5.4",
     "zod": "^3.23.8"
-  },
-  "devDependencies": {
-    "prisma": "^5.18.0"
   }
 }

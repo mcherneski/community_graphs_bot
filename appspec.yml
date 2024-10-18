@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /dist/
-    destination: /home/ec2-user/ethSafari_bot/dist/
+    destination: /home/ec2-user/cg_bot/dist/
     overwrite: true
 file_exists_behaviour: OVERWRITE
 hooks:
