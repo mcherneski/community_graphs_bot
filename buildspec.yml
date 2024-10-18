@@ -1,0 +1,30 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - npm install -g typescript
+      - npm install -g pm2
+      - npm install
+  pre_build:
+    commands:
+      - echo "Nothing to do in the pre_build phase..."
+  build:
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      - cp appspec.yml dist/
+      - cp -r scripts dist/
+      - cp ecosystem.config.js dist/
+      - cp package.json dist/
+      - ls -la 
+artifacts:
+  files:
+    - "dist/**/*"
+    - "dist/**/**/*"
+    - scripts/*
+    - "**/*"
+  discard-paths: no
